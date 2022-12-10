@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "list-task",
+    "slug": "list-task",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "list-task"
+}

@@ -22,8 +22,8 @@ Application, developed with React Native, that performs a simple CRUD of a to-do
 
 - Clone Repository and install dependences
 
-       git clone <link do repositório>
-       cd <nome da pasta>
+       git clone <link repository>
+       cd <folder name>
        npm install or yarn install
 
 - Run project

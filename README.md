@@ -7,7 +7,7 @@ Application, developed with React Native, that performs a simple CRUD of a to-do
 ## Technologies
 
 - Node Js
-- React Js
+- React Native
 
 ## Libraries
 

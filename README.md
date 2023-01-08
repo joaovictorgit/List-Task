@@ -20,10 +20,19 @@ Application, developed with React Native, that performs a simple CRUD of a to-do
 
 ## Run project locally
 
-    git clone <link do repositório>
-    cd <nome da pasta>
-    npm install ou yarn install
-    npm start ou yarn start
+- Clone Repository and install dependences
+
+       git clone <link do repositório>
+       cd <nome da pasta>
+       npm install or yarn install
+
+- Run project
+
+       npm start or yarn start
+
+- Run Tests
+
+       npm test or yarn test
 
 ## Screens
 

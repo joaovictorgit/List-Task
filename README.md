@@ -15,6 +15,8 @@ Application, developed with React Native, that performs a simple CRUD of a to-do
 - rneui/base
 - react-native-safe-area-context
 - react-native-gesture-handler
+- jest
+- @testing-library
 
 ## Run project locally
 

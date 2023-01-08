@@ -147,6 +147,7 @@ const Home = () => {
 
             <View style={styles.containerForm}>
               <TextInput
+                testID="input"
                 style={styles.inputText}
                 value={task}
                 onChangeText={(event) => setTask(event)}

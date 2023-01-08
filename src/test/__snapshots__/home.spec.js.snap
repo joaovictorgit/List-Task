@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Screen should be able title home screen 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "height": 1334,
+      "width": 750,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "marginTop": 35,
+        }
+      }
+      testID="title-list"
+    >
+      Lista de Tarefas
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "blue",
+        "borderRadius": 50,
+        "bottom": 10,
+        "flex": 1,
+        "height": 60,
+        "justifyContent": "center",
+        "opacity": 1,
+        "position": "absolute",
+        "right": 10,
+        "width": 60,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 25,
+        }
+      }
+    >
+      +
+    </Text>
+  </View>
+  <RCTSafeAreaView
+    style={
+      {
+        "flex": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 100,
+      }
+    }
+  >
+    <RCTScrollView
+      style={
+        {
+          "marginHorizontal": 20,
+        }
+      }
+    >
+      <View />
+    </RCTScrollView>
+  </RCTSafeAreaView>
+  <Modal
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={false}
+  />
+</View>
+`;

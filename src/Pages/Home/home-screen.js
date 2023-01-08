@@ -6,7 +6,7 @@ import {
   SafeAreaView,
   ScrollView,
 } from "react-native";
-import { Icon } from "@rneui/base";
+
 import styles from "./style";
 import { useEffect, useState } from "react";
 import { TextInput } from "react-native-gesture-handler";
@@ -90,7 +90,7 @@ const Home = () => {
           setTask("");
         }}
       >
-        <Icon name="add" color="white" />
+        <Text style={styles.textAdd}>+</Text>
       </TouchableOpacity>
 
       <SafeAreaView style={styles.containerSafeArea}>
@@ -114,7 +114,7 @@ const Home = () => {
               </Text>
               <Text style={styles.iconCompleted}>
                 {allTasks[index].statusCompletedTask ? (
-                  <Icon name="check" color="rgba(0, 160, 0, 0.64)" />
+                  <Text style={{ color: "green" }}>Check</Text>
                 ) : null}
               </Text>
             </View>
@@ -138,7 +138,7 @@ const Home = () => {
                 setStatusAddTask(true);
               }}
             >
-              <Icon name="close" color="black" />
+              <Text style={styles.textClose}>X</Text>
             </TouchableOpacity>
 
             <Text style={styles.titleModal}>

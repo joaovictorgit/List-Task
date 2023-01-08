@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
     bottom: 10,
     right: 10,
   },
+  textAdd: {
+    color: "white",
+    fontSize: 25,
+  },
   centeredView: {
     flex: 1,
     justifyContent: "center",
@@ -39,9 +43,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     width: 500,
-    padding: 15,    
+    padding: 15,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgb(162, 162, 162)'
+    borderBottomColor: "rgb(162, 162, 162)",
+  },
+  textClose: {
+    margin: 5,
   },
   iconCompleted: {
     position: "relative",
@@ -84,7 +91,7 @@ const styles = StyleSheet.create({
   },
   containerForm: {
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   inputText: {
     borderBottomWidth: 1,
@@ -94,7 +101,7 @@ const styles = StyleSheet.create({
   titleModal: {
     fontSize: 14,
     fontWeight: "500",
-  },    
+  },
   buttoAddTask: {
     backgroundColor: "blue",
     justifyContent: "center",
@@ -123,7 +130,7 @@ const styles = StyleSheet.create({
     height: 30,
   },
   textButtonAdd: {
-    color: "white"
+    color: "white",
   },
   containerSafeArea: {
     flex: 1,
@@ -133,16 +140,16 @@ const styles = StyleSheet.create({
     top: 100,
   },
   scrollView: {
-    marginHorizontal: 20
+    marginHorizontal: 20,
   },
   textScroll: {
     fontSize: 16,
-    color: 'rgb(162, 162, 162)',
+    color: "rgb(162, 162, 162)",
     fontWeight: "400",
     position: "absolute",
     left: 0,
     bottom: 10,
-  }
+  },
 });
 
 export default styles;

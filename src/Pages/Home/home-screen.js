@@ -31,7 +31,7 @@ const Home = () => {
         id: id,
         task: task,
         statusCompletedTaks: false,
-        date: new Date().toString(),
+        date: new Date().toJSON(),
       });
       setTask("");
       setModalVisible(false);
@@ -40,7 +40,7 @@ const Home = () => {
         id: oldTask,
         task: task,
         statusCompletedTask: false,
-        date: new Date().toString(),
+        date: new Date().toJSON(),
       });
       setTask("");
       setOldTask("");
@@ -50,20 +50,26 @@ const Home = () => {
   };
 
   const completedTask = () => {
-    set(ref(db, "tarefas/" + oldTask), {
-      id: oldTask,
-      task: task,
-      statusCompletedTask: true,
-      date: new Date().toString(),
-    });
-    setOldTask("");
-    setModalVisible(false);
+    try {
+      set(ref(db, "tarefas/" + oldTask), {
+        id: oldTask,
+        task: task,
+        statusCompletedTask: true,
+        date: new Date().toJSON(),
+      });
+      setOldTask("");
+      setModalVisible(false);
+      setStatusAddTask(false);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const deletedTask = () => {
     remove(ref(db, "tarefas/" + oldTask));
     setOldTask("");
     setModalVisible(false);
+    setStatusAddTask(false);
   };
 
   useEffect(() => {
@@ -99,7 +105,7 @@ const Home = () => {
             <View style={styles.containerScroll} key={allTasks[index]}>
               <Text
                 style={styles.textScroll}
-                key={allTasks[index]}
+                //key={allTasks[index]}
                 onPress={() => {
                   if (!allTasks[index].statusCompletedTask) {
                     setModalVisible(true);
@@ -142,7 +148,9 @@ const Home = () => {
             </TouchableOpacity>
 
             <Text style={styles.titleModal}>
-              {statusAddTask ? "Adicionar nova tarefa" : "Dados da Tarefa"}
+              {statusAddTask === true
+                ? "Adicionar nova tarefa"
+                : "Dados da Tarefa"}
             </Text>
 
             <View style={styles.containerForm}>
@@ -157,7 +165,7 @@ const Home = () => {
                   {statusAddTask ? "Adicionar Tarefa" : "Atualizar Tarefa"}
                 </Text>
               </TouchableOpacity>
-              {!statusAddTask ? (
+              {statusAddTask === false ? (
                 <>
                   <TouchableOpacity
                     style={styles.buttonCompleted}

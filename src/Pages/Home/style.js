@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   title: {
     fontWeight: "bold",
     fontSize: 16,
-    marginTop: 35,
+    marginTop: 55,
   },
   buttonAdd: {
     flex: 1,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   iconCompleted: {
     position: "relative",
     bottom: -5,
-    right: -100,
+    right: -150,
   },
   modalView: {
     margin: 20,

@@ -34,7 +34,6 @@ Application, developed with React Native, that performs a simple CRUD of a to-do
 
        npm test or yarn test
 
-## Screens
+## Application
 
-- Splash Screen
-- Home Screen
+![conversation-gif](./images/List-Task.gif)
